@@ -1,0 +1,72 @@
+
+.container {
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #7c50b3, #120138);
+}
+
+.container  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    background-color: #12013862;
+}
+
+.container  header h1 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.left_area , .rigth_area {
+    display: flex;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.left_area {
+    flex-direction: column;
+}
+.rigth_area  {
+   background: linear-gradient(to left, #120138, #7d50b300);
+}
+
+.left_area .img, .rigth_area .img  {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    z-index:0;
+    bottom:0;
+}
+
+.player{
+    position: absolute;
+    width: 250px;
+    bottom: 120px;
+}
+
+.locutora {
+    height:80vh;
+    position: absolute;
+    bottom:0px;
+}
+
+  @media (max-width: 798px){
+    .locutora {
+        height:60vh;
+    }
+  }
+
+  @media (max-width: 1083px){
+    .rigth_area{
+       display: none;
+    }
+  }

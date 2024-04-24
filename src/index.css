@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+    outline: none;
+}
+
+body {
+    height: 100svh;
+}
